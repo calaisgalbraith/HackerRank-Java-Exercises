@@ -1,4 +1,5 @@
-import java.util.Arrays;
+package finished;
+
 import java.util.Scanner;
 
 public class Anagrams {
@@ -7,21 +8,15 @@ public class Anagrams {
     public static boolean isAnagram(String a, String b){
 
         //convert to char arrays so can alphabetically sort strings
-        char[] first = a.toCharArray();
+        char[] first = a.toLowerCase().toCharArray();
         char[] second = b.toCharArray();
 
-
-
-
-
-        //works but can't import array in hackerrank, so did alterantive method
-//        //sort char arrays
-//        Arrays.sort(first);
-//        Arrays.sort(second);
-//
+        //sort char arrays
+        java.util.Arrays.sort(first);
+        java.util.Arrays.sort(second);
 
         //compare first to second, if equal to each other then return yes, else return no
-        return Arrays.toString(first).equals(Arrays.toString(second));
+        return java.util.Arrays.toString(first).equals(java.util.Arrays.toString(second));
 
     }
 
@@ -31,7 +26,7 @@ public class Anagrams {
         String b = scan.next();
         scan.close();
         boolean ret = isAnagram(a, b);
-        System.out.println( (ret) ? "Anagrams" : "Not Anagrams" );
+        System.out.println( (ret) ? "finished.Anagrams" : "Not finished.Anagrams" );
     }
 
 
