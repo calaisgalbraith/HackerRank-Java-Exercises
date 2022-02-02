@@ -7,7 +7,7 @@ import java.math.BigInteger;
 
 public class PrimalityTest {
 
-    //use Java BigInteger class's isProbablePrimeNumber
+    //use Java finished.BigInteger class's isProbablePrimeNumber
     //return if number is prime or not
 
     public static void isPrime(String n){
